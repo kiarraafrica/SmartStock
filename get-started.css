@@ -275,17 +275,21 @@ body {
     margin-top: 3%;
     height: 40px;
     width: 120px;
-    border: 0px solid;
+    border: 0;
     border-radius: 30px;
-    text-align: center;
-    font-family: "Istok Web", sans-serif;
-    font-size: 12px;
     background-color: #D3CAD0;
+    cursor: pointer;
+    text-decoration: none;
     font-family: "Istok Web", sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: #715C69;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -440,15 +444,18 @@ body {
     width: 120px;
     border: 0px solid;
     border-radius: 30px;
-    text-align: center;
-    font-family: "Istok Web", sans-serif;
-    font-size: 12px;
     background-color: #D3CAD0;
     font-family: "Istok Web", sans-serif;
+    cursor: pointer;
     font-size: 12px;
     font-weight: bold;
     color: #715C69;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -532,4 +539,8 @@ body {
 .signup-button-2:hover {
     background-color: #715C69;
     color: #D3CAD0;
+}
+
+#home-page-container {
+    display: none; 
 }

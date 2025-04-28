@@ -2,8 +2,17 @@
 <html>
     <head>
         <title>Smart Stock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="get-started.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="list.css">
+        <link rel="stylesheet" href="add.css">
+        <link rel="stylesheet" href="settings.css">
+        <link rel="stylesheet" href="about.css">
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
 
     <body>
@@ -29,7 +38,7 @@
                         <h1 class="hello">Hello, Friend!</h1>
                         <p class="text-1">Enter your personal details and<br>start journey with us.</p>
                         <p class="text-2">Already have an account?</p>
-                        <a class="signin-button-1" href="#signin-page-container">SIGN-IN</a>
+                        <a class="signin-button-1">SIGN-IN</a>
                     </div>
         
                     <div class="signup-right">
@@ -50,7 +59,7 @@
                                 <div id="password-input-1" class="editable" contenteditable="true" data-placeholder="Password" onfocus="clearText(this)" onblur="restoreText(this)">Password</div>
                             </div>
                         </div>
-                        <button class="signup-button-1">SIGN-UP</button>
+                        <a class="signup-button-1">SIGN-UP</a>
                         <div class="line-1"><span>or sign-up with</span></div>
                         <div class="logos-1">
                             <img class="gmail-logo-1" src="images/gmail.png">
@@ -77,7 +86,7 @@
                             </div>
                         </div>
                         <p class="forgot-password">Forgot password?</p>
-                        <button class="signin-button-2">SIGN-IN</button>
+                        <a class="signin-button-2">SIGN-IN</a>
                         <div class="line-2"><span>or sign-in with</span></div>
                         <div class="logos-1">
                             <img class="gmail-logo-1" src="images/gmail.png">
@@ -94,6 +103,548 @@
                 </div>
             </section>
 
+            <section class="home-page-container" id="home-page-container">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="dashboard">
+                        <div class="dashboard-left">
+                            <div class="tagline-container">
+                                <div class="tagline">
+                                    <p class="aboutus-text">About Us</p>
+                                    <p class="tagline-1">Welcome to SmartStock!</p>
+                                    <p class="tagline-2">where expiration dates meet their match! Tired of discovering spoiled food, expired medication,<br> or outdated supplies?</p>
+                                    <p class="read-more">Read more...</p>
+                                </div>
+                                <div class="logo-container">
+                                    <img class="smartstock-logo-6" src="images/smartstock.png">
+                                </div>
+                            </div>
+                            <div class="storage-list-1">
+                                <div class="storage-box-1">
+                                    <div class="add-storage-1">
+                                        <p class="add-storage-2">+</p>
+                                    </div>
+                                    <div class="refrigerator-1">
+                                        <img class="refrigerator-img" src="images/refrigerator.png">
+                                        <p class="storage-text">REFRIGERATOR</p>
+                                    </div>
+                                    <div class="freezer-1">
+                                        <img class="freezer-img" src="images/freezer.png">
+                                        <p class="storage-text">FREEZER</p>
+                                    </div>
+                                </div>
+                                <div class="storage-box-2">
+                                    <div class="pantry-1">
+                                        <img class="pantry-img" src="images/pantry.png">
+                                        <p class="storage-text">PANTRY</p>
+                                    </div>
+                                    <div class="medical-cabinet-1">
+                                        <img class="medical-cabinet-img" src="images/medical-cabinet.png">
+                                        <p class="storage-text">MEDICAL CABINET</p>
+                                    </div>
+                                    <div class="personal-care-1">
+                                        <img class="personal-care-img" src="images/personal-care.png">
+                                        <p class="storage-text">PERSONAL CARE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-right">
+                            <div class="notification-container">
+                                <p class="notification-text">Notification</p>
+                                <div class="notification">
+                                    <div class="notif-1">
+                                        <img class="category-icon" src="images/fruits.png">
+                                        <p class="category-name">Lemon</p>
+                                        <div class="expiry-notif">
+                                            <p class="expiry-indicator">Expired</p>
+                                            <p class="expiry-date">2025-03-23</p>
+                                        </div>
+                                    </div>
+                                    <div class="notif-2">
+                                        <img class="category-icon" src="images/dairy.png">
+                                        <p class="category-name">Butter</p>
+                                        <div class="expiry-notif">
+                                            <p class="expiry-indicator">Today</p>
+                                            <p class="expiry-date">2025-03-29</p>
+                                        </div>
+                                    </div>
+                                    <div class="notif-3">
+                                        <img class="category-icon" src="images/veggies.png">
+                                        <p class="category-name">Okra</p>
+                                        <div class="expiry-notif">
+                                            <p class="expiry-indicator">2 days</p>
+                                            <p class="expiry-date">2025-03-31</p>
+                                        </div>
+                                    </div>
+                                    <div class="notif-4">
+                                        <img class="category-icon" src="images/skincare.png">
+                                        <p class="category-name">Issy Lip Bullet</p>
+                                        <div class="expiry-notif">
+                                            <p class="expiry-indicator">5 days</p>
+                                            <p class="expiry-date">2025-04-03</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="list-page-container" id="list-page-container">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                        <div class="storage-carousel-container">
+                            <button class="arrow left" onclick="scrollLeft()">‹</button>
+                            <div class="storage-carousel">
+                                <div class="storage">
+                                    <img class="refrigerator-img" src="images/refrigerator.png">
+                                    <p class="storage-text">REFRIGERATOR</p>
+                                </div>
+                                <div class="storage">
+                                    <img class="freezer-img" src="images/freezer.png">
+                                    <p class="storage-text">FREEZER</p>
+                                </div>
+                                <div class="storage">
+                                    <img class="pantry-img" src="images/pantry.png">
+                                    <p class="storage-text">PANTRY</p>
+                                </div>
+                                <div class="storage">
+                                    <img class="medical-cabinet-img" src="images/medical-cabinet.png">
+                                    <p class="storage-text">MEDICAL CABINET</p>
+                                </div>
+                                <div class="storage">
+                                    <img class="personal-care-img" src="images/personal-care.png">
+                                    <p class="storage-text">PERSONAL CARE</p>
+                                </div>
+                            </div>
+                            <button class="arrow right" onclick="scrollRight()">›</button>
+                        </div>
+                        <div class="horizontal-line-2"></div>
+                        <div class="item-description">
+                            <p class="item-description-text">ITEM</p>
+                            <p class="item-description-text">QUANTITY</p>
+                            <p class="item-description-text">MANUFACTURED DATE</p>
+                            <p class="item-description-text">EXPIRATION DATE</p>
+                            <p class="item-description-text">DAY/S LEFT</p>
+                        </div>
+                        <div class="items-container">
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                            <div class="items">
+                                <img class="items-img" src="images/dairy.png">
+                                <p class="items-text items-name">BUTTER</p>
+                                <p class="items-text items-quantity">1</p>
+                                <p class="items-text items-manufactury">2025-01-03</p>
+                                <p class="items-text items-expiry">2025-04-01</p>
+                                <p class="items-text items-day-left">3</p>
+                                <span class="items-text ellipsis">⋮</span>
+                            </div>
+                        </div>
+                        <div class="add-things">
+                            <button class="plus-sign" onclick="toggleMenu()">+</button>
+                            <div class="popup-menu" id="popup-menu">
+                                <div onclick="showSection('storage-page-container')"><span>Add Storage</span></div>
+                                <div onclick="showSection('category-page-container')"><span>Add Category</span></div>
+                                <div onclick="showSection('item-page-container')"><span>Add Item</span></div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="storage-page-container" class="add-page-section">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                    </div>
+                </div>
+            </section>
+            <section id="category-page-container" class="add-page-section">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                    </div>
+                </div>
+            </section>
+            <section id="item-page-container" class="add-page-section">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-page-container" id="settings-page-container">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                        <div class="settings-container">
+                            <div class="behavior-container">
+                                <p>Behavior</p>
+                                <div class="behavior-content">
+                                </div>
+                            </div>
+                            <div class="appearance-containter">
+                                <p>Appearance</p>
+                                <div class="appearance-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-page-container" id="about-page-container">
+                <div class="gradient-background-4">
+                    <img class="smartstock-logo-4" src="images/smartstock.png">
+                    <div class="horizontal-line-1"></div>
+                    <i class="fi fi-rs-home nav-icon" id="home-icon"></i>
+                    <i class="fi fi-rr-list nav-icon" id="list-icon"></i>
+                    <i class="fi fi-rr-settings nav-icon" id="settings-icon"></i>
+                    <i class="fi fi-rr-interrogation nav-icon" id="about-icon"></i>
+                    <i class="fi fi-rs-exit logout-icon"></i>
+                </div>
+                <div class="curve-rectangle">
+                    <div class="header">
+                        <div class="header-profile">
+                            <i class="fi fi-rs-user user-icon"></i>
+                            <p class="hello-username">Hello, @username!</p>
+                        </div>
+                        <div class="header-date">
+                            <p class="as-of">AS OF</p>
+                            <p class="date">March 29, 2025</p>
+                        </div>
+                    </div>
+                    <div class="inside-rectangle">
+                        <input type="radio" name="tab" id="tab1" checked hidden>
+                        <input type="radio" name="tab" id="tab2" hidden>
+                        <input type="radio" name="tab" id="tab3" hidden>
+                        
+                        <div class="tab-wrapper">
+                            <div class="tab-container">
+                                <label for="tab1" class="tab">About this website</label>
+                                <label for="tab2" class="tab">Developers</label>
+                                <label for="tab3" class="tab">How to use</label>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-section tab1-content about-this-website" id="about-tab">
+                            <div class="about-us-section">
+                                <h2 class="about-heading">Tired of the endless cycle<br>of buy, forget, and toss?<br>SmartStock breaks the<br>pattern.</h2>
+                                <p class="about-description">SmartStock is an intuitive platform transforms how you track<br>what matters, turning chaotic expiration management into<br>
+                                    effortless organization. With SmartStock, you're not just<br>tracking dates - you're unlocking a more efficient, less<br>
+                                    wasteful lifestyle. Smart Tracking, Smarter Living: your path<br>to perfectly timed consumption starts here.
+                                </p>
+                            </div>
+                            <img class="computer" src="images/computer.png">
+                        </div>
+                        
+                        <div class="tab-section tab2-content" id="dev-tab">
+                            <div class="developers-section">
+                                <h1 class="meet">Meet our Team</h1>
+                                <div class="developers-grid">
+                                    <div class="team-member">
+                                        <img src="images/edricka.png">
+                                        <div class="member-info">
+                                            <h1>Edricka Mae H. Paulos</h1>
+                                            <p style="margin-top: 8%">Project Manager</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-2">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-2">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <img src="images/edricka.png">
+                                        <div class="member-info">
+                                            <h1>Nigel Hans G. Nunez</h1>
+                                            <p style="margin-top: 9%">Back-End Head</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-3">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-3">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <img src="images/kiarra.jpg">
+                                        <div class="member-info">
+                                            <h1>Kiarra Francesca Gabrielle S. Africa</h1>
+                                            <p style="margin-top: 5%">Front-End Head</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-4">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-4">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <img src="images/ayelet.png">
+                                        <div class="member-info">
+                                            <h1>Ayelet D'arcy C. De Castro</h1>
+                                            <p style="margin-top: 7%">Full-Stack Developer</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-5">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-5">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <img src="images/kriztel.jpg">
+                                        <div class="member-info">
+                                            <h1>Kriztel C. Garcia</h1>
+                                            <p style="margin-top: 10%">Full-Stack Developer</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-6">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-6">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <img src="images/genrique.png">
+                                        <div class="member-info">
+                                            <h1>Genrique Sean Arkin D. Balmes</h1>
+                                            <p style="margin-top: 6%">Full-Stack Developer</p>
+                                            <div class="social-icons-1">
+                                                <div class="social-icons-7">
+                                                    <a class="social-link" href="africakiarra.bu@gmail.com">
+                                                        <i class="fas fa-envelope"></i>
+                                                      </a>
+                                                </div>
+                                                <div class="social-icons-7">
+                                                      <a class="social-link" href="https://github.com/kiarraafrica" target="_blank">
+                                                        <i class="fab fa-github"></i>
+                                                      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-section tab3-content how-to-use" id="how-to-tab">
+                            <div class="how-to-use-section">
+                                <h2 class="how-heading">Smart Tracking<br>Smarter Living</h2>
+                                <p class="how-text">with SmartStock</p>
+                                <p class="how-description">SmartStock is an innovative website that addresses critical environmental<br> challenges by minimizing waste, optimizing resource consumption, and<br>
+                                promoting sustainable living practices. By providing a comprehensive<br>digital platform for tracking exprication dates of food, medicines, and<br>
+                                personal care products, the website directly contributes to reducing<br>unnecessary waste and supporting ecological conservation efforts.</p>
+                            </div>
+                            <img class="computer-2" src="images/computer.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         
         <script src="js.js"></script>
